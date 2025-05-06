@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио разработчика</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Привет, я веб-разработчик!</h1>
-    <p>Это мой сайт-портфолио.</p>
-    <button onclick="checkBackend()">Проверить бэкенд</button>
-    <p id="status"></p>
-    <script src="script.js"></script>
+  <header>
+    <h1>Привет, я PHP-разработчик</h1>
+    <p>Laravel, Symfony, Yii, чистый код</p>
+    <a href="projects.html">Примеры работ</a>
+  </header>
+
+  <footer>
+    <p>Контакты: <a href="mailto:you@example.com">you@example.com</a></p>
+  </footer>
+
+  <button id="chatBtn">Чат со службой поддержки</button>
+
+  <div id="chatModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="chatWindow"></div>
+      <input id="userInput" placeholder="Напишите сообщение..." />
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
 </body>
 </html>
